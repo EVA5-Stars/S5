@@ -25,6 +25,7 @@ Base Code with Squeeze and Excitation model, to make sure we are able to set the
 - Model is quite large but working
 - Model is over-fitting
 
+[Version 0 - Code](https://github.com/EVA5-Stars/S5/blob/master/00_EVA5_Session5_Base_Code_Step_0.ipynb)
 
 ### Version 1 (with GAP)
 -------------------------
@@ -45,6 +46,8 @@ Add GAP and remove the last BIG kernel in the Output Block of the CNN.
 - Model was able to generalise it better
 - Overall model's accuracy got reduced. , but test accuracy was observed to be little more w.r.t the training accuracy, most of the time, which was a good thing.
 
+[Version 1 - Code](https://github.com/EVA5-Stars/S5/blob/master/01_EVA5_Session5_GAP_Step_1.ipynb)
+
 ### Version 2 (with Batch-Norm)
 -------------------------------
 
@@ -62,6 +65,8 @@ Add Batch-norm to increase model efficiency.
 
 - No. of model parameters got increased a bit, which was expected beacuse of Batch Normalization
 - Overall model performance got increased a bit, but we again started to see overfit and its not able to reach 99.4% accuracy
+
+[Version 2 - Code](https://github.com/EVA5-Stars/S5/blob/master/02_EVA5_Session5_BN_Step_2.ipynb)
 
 ### Version 3 (with LR Scheduler)
 ---------------------------------
@@ -84,6 +89,8 @@ Add LR Scheduler
     - gamma = [.1, .2, .3]
 - Finally we frozen to (step_size=9, gamma=0.2)
 
+[Version 3 - Code](https://github.com/EVA5-Stars/S5/blob/master/03_EVA5_Session5_StepLR_Step_3.ipynb)
+
 ### Version 4 (with ImageAugmentation)
 --------------------------------------
 
@@ -103,5 +110,6 @@ Add rotation, try with 5-10 degrees
 - Model was not able to generalize it better.
 - Reached the accuracy of 99.4 % for last 4 epocs with total no. of parameters less than 8000
 
+[Version 4 - Code](https://github.com/EVA5-Stars/S5/blob/master/04_EVA5_Session5_ImageAugmentation_Step_4.ipynb)
 
 
